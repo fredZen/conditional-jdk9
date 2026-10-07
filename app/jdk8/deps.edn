@@ -1,0 +1,6 @@
+{:paths   ["src"]
+ :deps    {org.clojure/clojure {:mvn/version "1.11.1"}}
+ :aliases {:run                  {:main-opts ["-m" "jdk8.app"]}
+           :+reflection          {:extra-deps {com.widdindustries/cljc.java-time {:local/root "../../lib/reflection"}}}
+           :+separate-namespaces {:extra-deps {com.widdindustries/cljc.java-time {:local/root "../../lib/separate-namespaces"}}}
+           :+try-catch           {:extra-deps {com.widdindustries/cljc.java-time {:local/root "../../lib/try-catch"}}}}}
